@@ -1,6 +1,5 @@
 $('#roster-btn').on('click', function () {
   let input = $('#input-teamName').val();
-
   $.get(`teams/${input}`, function (players) {
     $('.main').empty();
     players.map((player) => {
